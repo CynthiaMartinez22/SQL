@@ -1,0 +1,22 @@
+CREATE TABLE the_hair_store (id INTEGER PRIMARY KEY, name TEXT, price TEXT, ounces INTEGER, aisle INTEGER, use TEXT);
+
+INSERT INTO the_hair_store VALUES( 1,"Redken Shampoo", 22, 20, 2, "moisture control");
+INSERT INTO the_hair_store VALUES (2, "Redken Conditioner", 22, 20, 2, "moisture control");
+INSERT INTO the_hair_store VALUES (3, "Redken Allsoft" , 17, 16, 3, "hydrate");
+INSERT INTO the_hair_store VALUES (4, "Redken Allsoft conditioner", 17, 16, 3, "hydrate" );
+INSERT INTO the_hair_store VALUES (5, "Matrix vivids black" , 10, 2, 6, "demi deposit");
+INSERT INTO the_hair_store VALUES (6, "Matrix vivids blue",  12, 4, 6 ,"demi deposit" );
+INSERT INTO the_hair_store VALUES (7, "Matrix vivids pink", 10, 2, 6, "demi deposit");
+INSERT INTO the_hair_store VALUES (8, "Matrix demi blonde" ,10, 2, 7, "demi deposit");
+INSERT INTO the_hair_store VALUES (9, "Matrix black", 12,4,7, "PERMANENT");
+INSERT INTO the_hair_store VALUES (10, "OPI PURPLE MAGIC", 10, 0.3, 10, "NAIL POLISH");
+INSERT INTO the_hair_store VALUES (11, "OPI NAIL STRENGTHNER", 10, 0.3, 10, "NAIL STRENGHTER");
+INSERT INTO the_hair_store VALUES (12, "WET BRUSH" , 15, 0, 4, "DETANGLING BRUSH");
+INSERT INTO the_hair_store VALUES (13, "WET COMB", 8, 0, 4, "COMB");
+INSERT INTO the_hair_store VALUES (14, "BEARD BRUSH", 10, 0, 4,"beard care");
+INSERT INTO the_hair_store VALUES (15, "for brows", 16, 0.1, 4, "BROWS BRUSH");
+SELECT * FROM the_hair_store ORDER BY price;
+SELECT * FROM the_hair_store ORDER BY aisle;
+SELECT SUM(aisle) FROM the_hair_store; 
+
+
